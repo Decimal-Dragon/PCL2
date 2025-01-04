@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28AAF469-19BB-48B9-89E2-3914588E479F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PIain Craft Launcher 2</RootNamespace>
+    <AssemblyName>PIain Craft Launcher 2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>PIain Craft Launcher 2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Imazen.WebP" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAudio" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Ookii.Dialogs.Wpf" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\Program\Dev\dnSpy-net-win64\bin\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\Program\Dev\dnSpy-net-win64\bin\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-{BBC9FCFA-E6E0-4D66-8CCC-A2B685C8D858}.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class5.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="dummy_ptr\{7c7a84a8-45b5-402b-b08a-a30cabce76b3}.cs" />
+    <Compile Include="PCL\Application.xaml.cs">
+      <DependentUpon>Application.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PCL\CookieWebClient.cs" />
+    <Compile Include="PCL\CrashAnalyzer.cs" />
+    <Compile Include="PCL\FormMain.xaml.cs">
+      <DependentUpon>FormMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PCL\ILoadingTrigger.cs" />
+    <Compile Include="PCL\IMyRadio.cs" />
+    <Compile Include="PCL\IRefreshable.cs" />
+    <Compile Include="PCL\ModAnimation.cs" />
+    <Compile Include="PCL\ModBase.cs" />
+    <Compile Include="PCL\ModComp.cs" />
+    <Compile Include="PCL\ModDevelop.cs" />
+    <Compile Include="PCL\ModDownload.cs" />
+    <Compile Include="PCL\ModDownloadLib.cs" />
+    <Compile Include="PCL\ModEvent.cs" />
+    <Compile Include="PCL\ModJava.cs" />
+    <Compile Include="PCL\ModLaunch.cs" />
+    <Compile Include="PCL\ModLoader.cs" />
+    <Compile Include="PCL\ModMain.cs" />
+    <Compile Include="PCL\ModMinecraft.cs" />
+    <Compile Include="PCL\ModMod.cs" />
+    <Compile Include="PCL\ModModpack.cs" />
+    <Compile Include="PCL\ModMusic.cs" />
+    <Compile Include="PCL\ModNet.cs" />
+    <Compile Include="PCL\ModSecret.cs" />
+    <Compile Include="PCL\ModSetup.cs" />
+    <Compile Include="PCL\ModWatcher.cs" />
+    <Compile Include="PCL\MyBitmap.cs" />
+    <Compile Include="PCL\MyButton.cs" />
+    <Compile Include="PCL\MyCard.cs" />
+    <Compile Include="PCL\MyCheckBox.cs" />
+    <Compile Include="PCL\MyComboBox.cs" />
+    <Compile Include="PCL\MyComboBoxItem.cs" />
+    <Compile Include="PCL\MyCompItem.cs" />
+    <Compile Include="PCL\MyExtraButton.cs" />
+    <Compile Include="PCL\MyHint.cs" />
+    <Compile Include="PCL\MyIconButton.cs" />
+    <Compile Include="PCL\MyIconTextButton.cs" />
+    <Compile Include="PCL\MyImage.cs" />
+    <Compile Include="PCL\MyListItem.cs" />
+    <Compile Include="PCL\MyLoading.cs" />
+    <Compile Include="PCL\MyLoadingStateSimulator.cs" />
+    <Compile Include="PCL\MyLocalModItem.cs" />
+    <Compile Include="PCL\MyMenuItem.cs" />
+    <Compile Include="PCL\MyMsgInput.cs" />
+    <Compile Include="PCL\MyMsgLogin.cs" />
+    <Compile Include="PCL\MyMsgSelect.cs" />
+    <Compile Include="PCL\MyMsgText.cs" />
+    <Compile Include="PCL\MyPageLeft.cs" />
+    <Compile Include="PCL\MyPageRight.cs" />
+    <Compile Include="PCL\MyRadioBox.cs" />
+    <Compile Include="PCL\MyRadioButton.cs" />
+    <Compile Include="PCL\MyResizer.cs" />
+    <Compile Include="PCL\MyScrollBar.cs" />
+    <Compile Include="PCL\MyScrollViewer.cs" />
+    <Compile Include="PCL\MySearchBox.cs" />
+    <Compile Include="PCL\MySettings.Designer.cs">
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PCL\MySkin.cs" />
+    <Compile Include="PCL\MySlider.cs" />
+    <Compile Include="PCL\MyTextBox.cs" />
+    <Compile Include="PCL\MyTextButton.cs" />
+    <Compile Include="PCL\My\MyProject.cs" />
+    <Compile Include="PCL\My\MySettingsProperty.cs" />
+    <Compile Include="PCL\My\MyWpfExtension.cs" />
+    <Compile Include="PCL\My\Resources\Resources.cs" />
+    <Compile Include="PCL\PageDownloadClient.cs" />
+    <Compile Include="PCL\PageDownloadCompDetail.cs" />
+    <Compile Include="PCL\PageDownloadFabric.cs" />
+    <Compile Include="PCL\PageDownloadForge.cs" />
+    <Compile Include="PCL\PageDownloadInstall.cs" />
+    <Compile Include="PCL\PageDownloadLeft.cs" />
+    <Compile Include="PCL\PageDownloadLiteLoader.cs" />
+    <Compile Include="PCL\PageDownloadMod.cs" />
+    <Compile Include="PCL\PageDownloadNeoForge.cs" />
+    <Compile Include="PCL\PageDownloadOptiFine.cs" />
+    <Compile Include="PCL\PageDownloadPack.cs" />
+    <Compile Include="PCL\PageLaunchLeft.cs" />
+    <Compile Include="PCL\PageLaunchRight.cs" />
+    <Compile Include="PCL\PageLinkFeedback.cs" />
+    <Compile Include="PCL\PageLinkHiper.cs" />
+    <Compile Include="PCL\PageLinkIoi.cs" />
+    <Compile Include="PCL\PageLinkLeft.cs" />
+    <Compile Include="PCL\PageLoginAuth.cs" />
+    <Compile Include="PCL\PageLoginAuthSkin.cs" />
+    <Compile Include="PCL\PageLoginLegacy.cs" />
+    <Compile Include="PCL\PageLoginMs.cs" />
+    <Compile Include="PCL\PageLoginMsSkin.cs" />
+    <Compile Include="PCL\PageLoginNide.cs" />
+    <Compile Include="PCL\PageLoginNideSkin.cs" />
+    <Compile Include="PCL\PageOtherAbout.cs" />
+    <Compile Include="PCL\PageOtherHelp.cs" />
+    <Compile Include="PCL\PageOtherHelpDetail.cs" />
+    <Compile Include="PCL\PageOtherLeft.cs" />
+    <Compile Include="PCL\PageOtherTest.cs" />
+    <Compile Include="PCL\PageSelectLeft.cs" />
+    <Compile Include="PCL\PageSelectRight.cs" />
+    <Compile Include="PCL\PageSetupLaunch.cs" />
+    <Compile Include="PCL\PageSetupLeft.cs" />
+    <Compile Include="PCL\PageSetupLink.cs" />
+    <Compile Include="PCL\PageSetupSystem.cs" />
+    <Compile Include="PCL\PageSetupUI.cs" />
+    <Compile Include="PCL\PageSpeedLeft.cs" />
+    <Compile Include="PCL\PageSpeedRight.cs" />
+    <Compile Include="PCL\PageVersionLeft.cs" />
+    <Compile Include="PCL\PageVersionMod.cs" />
+    <Compile Include="PCL\PageVersionModDisabled.cs" />
+    <Compile Include="PCL\PageVersionOverall.cs" />
+    <Compile Include="PCL\PageVersionSetup.cs" />
+    <Compile Include="PCL\SystemDropShadowChrome.cs" />
+    <Compile Include="PCL\Validate.cs" />
+    <Compile Include="PCL\ValidateExcept.cs" />
+    <Compile Include="PCL\ValidateExceptSame.cs" />
+    <Compile Include="PCL\ValidateFileName.cs" />
+    <Compile Include="PCL\ValidateFolderName.cs" />
+    <Compile Include="PCL\ValidateFolderPath.cs" />
+    <Compile Include="PCL\ValidateHttp.cs" />
+    <Compile Include="PCL\ValidateInteger.cs" />
+    <Compile Include="PCL\ValidateLength.cs" />
+    <Compile Include="PCL\ValidateNullable.cs" />
+    <Compile Include="PCL\ValidateNullOrEmpty.cs" />
+    <Compile Include="PCL\ValidateNullOrWhiteSpace.cs" />
+    <Compile Include="PCL\ValidateRegex.cs" />
+    <Compile Include="PCL\XamlGeneratedNamespace\GeneratedInternalTypeHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VB$AnonymousDelegate_0.cs" />
+    <Compile Include="VB$AnonymousDelegate_1.cs" />
+    <Compile Include="VB$AnonymousDelegate_10.cs" />
+    <Compile Include="VB$AnonymousDelegate_11.cs" />
+    <Compile Include="VB$AnonymousDelegate_12.cs" />
+    <Compile Include="VB$AnonymousDelegate_13.cs" />
+    <Compile Include="VB$AnonymousDelegate_2.cs" />
+    <Compile Include="VB$AnonymousDelegate_3.cs" />
+    <Compile Include="VB$AnonymousDelegate_4.cs" />
+    <Compile Include="VB$AnonymousDelegate_5.cs" />
+    <Compile Include="VB$AnonymousDelegate_6.cs" />
+    <Compile Include="VB$AnonymousDelegate_7.cs" />
+    <Compile Include="VB$AnonymousDelegate_8.cs" />
+    <Compile Include="VB$AnonymousDelegate_9.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="Param.Exception" />
+    <EmbeddedResource Include="PCL\Resources.resources" />
+    <EmbeddedResource Include="Property.Model" />
+    <EmbeddedResource Include="Reg.Item" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="PCL\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="PCL\Application.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="controls\mybutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\mycheckbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myextrabutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myhint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myiconbutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myicontextbutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\mylistitem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myloading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\mymsg\mymsginput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\mymsg\mymsgselect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\mymsg\mymsgtext.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myradiobox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myradiobutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\mysearchbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\myslider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modules\minecraft\mycompitem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modules\minecraft\mylocalmoditem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadclient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadcompdetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadfabric.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadforge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadinstall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadliteloader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadmod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadneoforge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadoptifine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagedownload\pagedownloadpack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\mymsglogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\myskin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pagelaunchleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pagelaunchright.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginauth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginauthskin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginlegacy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginmsskin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginnide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelaunch\pageloginnideskin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelink\pagelinkfeedback.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelink\pagelinkhiper.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelink\pagelinkioi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagelink\pagelinkleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageother\pageotherabout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageother\pageotherhelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageother\pageotherhelpdetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageother\pageotherleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageother\pageothertest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageselectleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageselectright.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagesetup\pagesetuplaunch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagesetup\pagesetupleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagesetup\pagesetuplink.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagesetup\pagesetupsystem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagesetup\pagesetupui.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagespeedleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pagespeedright.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageversion\pageversionleft.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageversion\pageversionmod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageversion\pageversionmoddisabled.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageversion\pageversionoverall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\pageversion\pageversionsetup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PCL\FormMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="resources\language\en_us.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="resources\language\zh_cn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\blocks\anvil.png" />
+    <Resource Include="images\blocks\cobblestone.png" />
+    <Resource Include="images\blocks\commandblock.png" />
+    <Resource Include="images\blocks\egg.png" />
+    <Resource Include="images\blocks\fabric.png" />
+    <Resource Include="images\blocks\goldblock.png" />
+    <Resource Include="images\blocks\grass.png" />
+    <Resource Include="images\blocks\grasspath.png" />
+    <Resource Include="images\blocks\neoforge.png" />
+    <Resource Include="images\blocks\optifabric.png" />
+    <Resource Include="images\blocks\redstoneblock.png" />
+    <Resource Include="images\blocks\redstonelampoff.png" />
+    <Resource Include="images\blocks\redstonelampon.png" />
+    <Resource Include="images\heads\00ll00.png" />
+    <Resource Include="images\heads\bangbang93.png" />
+    <Resource Include="images\heads\hao_tian.jpg" />
+    <Resource Include="images\heads\logo.png" />
+    <Resource Include="images\heads\ltcat.jpg" />
+    <Resource Include="images\heads\mcbbs.png" />
+    <Resource Include="images\heads\patrick.png" />
+    <Resource Include="images\heads\pcl2.png" />
+    <Resource Include="images\heads\wiki.png" />
+    <Resource Include="images\heads\z0z0r4.png" />
+    <Resource Include="images\icon.ico" />
+    <Resource Include="images\icons\a.png" />
+    <Resource Include="images\icons\b.png" />
+    <Resource Include="images\icons\disabled.png" />
+    <Resource Include="images\icons\noicon.png" />
+    <Resource Include="images\icons\r.png" />
+    <Resource Include="images\icons\unavailable.png" />
+    <Resource Include="images\skins\alex.png" />
+    <Resource Include="images\skins\ari.png" />
+    <Resource Include="images\skins\efe.png" />
+    <Resource Include="images\skins\kai.png" />
+    <Resource Include="images\skins\makena.png" />
+    <Resource Include="images\skins\noor.png" />
+    <Resource Include="images\skins\steve.png" />
+    <Resource Include="images\skins\sunny.png" />
+    <Resource Include="images\skins\zuri.png" />
+    <Resource Include="images\themes\10.png" />
+    <Resource Include="images\themes\11.png" />
+    <Resource Include="images\themes\12.png" />
+    <Resource Include="images\themes\13.png" />
+    <Resource Include="images\themes\42.png" />
+    <Resource Include="images\themes\5.png" />
+    <Resource Include="images\themes\6.png" />
+    <Resource Include="images\themes\7.png" />
+    <Resource Include="images\themes\8.png" />
+    <Resource Include="images\themes\9.png" />
+    <Resource Include="Resources\font.ttf" />
+    <Resource Include="Resources\moddata.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
